@@ -2,15 +2,15 @@ require_relative "../config/environment.rb"
 
 class Student
 
-namespace :db do
-  desc 'migrate changes to your database'
-  task :migrate => :environment do
-    Student.create_table
-  desc 'seed the database with some dummy data'
-  task :seed do
-    require_relative './db/seeds.rb'
-  end
-end
+# namespace :db do
+#   desc 'migrate changes to your database'
+#   task :migrate => :environment do
+#     Student.create_table
+#   desc 'seed the database with some dummy data'
+#   task :seed do
+#     require_relative './db/seeds.rb'
+#   end
+# end
   
   attr_accessor :name, :grade
   
